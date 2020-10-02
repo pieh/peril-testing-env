@@ -7,7 +7,7 @@ maintainers resolve your issue.\
 `
 
 export const emptybody = () => {
-  
+  console.log('v1')
   
   const {
     user: { login: username },
