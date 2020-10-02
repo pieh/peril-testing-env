@@ -1,4 +1,4 @@
-// import { danger, markdown, peril } from "danger"
+import { danger, markdown, peril } from "danger"
 
 const getMessage = (username: string) => `\
 @${username} We noticed that the body of this issue is blank.
