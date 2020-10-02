@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/danger/peril/master/peril-settings-json.schema",
+  "settings": {
+    "ignored_repos": [],
+    "env_vars": ["SLACK_WEBHOOK_URL", "GITHUB_ACCESS_TOKEN"],
+    "modules": ["@slack/client", "joi", "js-yaml", "date-fns"]
+  },
+  "rules": {
+    "issues.opened": ["peril/rules/emptybody.ts"]
+  },
+}
