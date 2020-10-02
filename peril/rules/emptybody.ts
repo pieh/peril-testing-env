@@ -14,8 +14,8 @@ export const emptybody = () => {
     body,
   } = danger.github.issue as any
   
-  console.log(peril)
-  console.log(peril.env)
+  console.log({p: peril})
+  console.log({e: peril.env})
 
   if (body.trim().length === 0) {
     markdown(getMessage(username))
