@@ -1,4 +1,4 @@
-import { danger, markdown } from "danger"
+import { danger, markdown, peril } from "danger"
 
 const getMessage = (username: string) => `\
 @${username} We noticed that the body of this issue is blank.
@@ -7,10 +7,14 @@ maintainers resolve your issue.\
 `
 
 export const emptybody = () => {
+  
+  
   const {
     user: { login: username },
     body,
   } = danger.github.issue as any
+  
+  console.log(peril)
 
   if (body.trim().length === 0) {
     markdown(getMessage(username))
